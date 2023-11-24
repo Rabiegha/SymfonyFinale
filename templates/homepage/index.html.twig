@@ -8,8 +8,9 @@
 			    {% for notice in app.flashes('notice') %}
         			<p class="alert alert-success">{{notice}}</p>        
         		{% endfor %}
+				<p>Cliquez sur ce boutton pour nous contacter:</p>
 
-                <a class="btn btn-success" href="{{ url('homepage.contact') }}">nous contacter</a>
+                <a class="btn btn-success" href="{{ url('homepage.contact') }}">Contact us</a>
 
 </div>
 
