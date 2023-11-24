@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+{% include "_inc/nav.html.twig" %}
+
+<div class="container">
+
+			    {% for notice in app.flashes('notice') %}
+        			<p class="alert alert-success">{{notice}}</p>        
+        		{% endfor %}
+
+                <a class="btn btn-success" href="{{ url('homepage.contact') }}">nous contacter</a>
+
+</div>
+
+{% endblock %}
+{% block title %}
+project
+{% endblock %}
